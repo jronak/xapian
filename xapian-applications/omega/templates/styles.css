@@ -1,7 +1,27 @@
+body {
+    margin: 0px;
+}
+
 fieldset {
 	outline: none;
 	border: 0px;
 	text-align: center;
+}
+
+.query-search, .query-metadata,
+.query-suggested-container, .query-options, .query-suggestion {
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.query-metadata {
+    margin: 0px;
+    box-shadow: 0 5px 5px -6px black;
+}
+
+.query-metadata-element {
+    display: block;
+    padding: 2px;
 }
 
 .query-search-textbox {
