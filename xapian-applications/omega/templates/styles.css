@@ -56,3 +56,15 @@ fieldset {
     color: #111111;
     border: 1px solid #bbb;
 }
+
+.list-item-result, .list-item-info {
+    padding: 20px;
+}
+
+.list-item-info {
+    background-color: #ecf0f1;
+}
+
+.list-item-result {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
