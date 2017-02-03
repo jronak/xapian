@@ -94,7 +94,7 @@ Search took $time seconds
 </p>
 ${Results}
 <table>
-$hitlist{<tr class="list-item-container"><td>
+$hitlist{<tr class="list-item-container"><td class="list-item-info">
 ${<img src="/icons/omega/score-$div{$percentage,10}.png" alt="$percentage%" height=16 width=32>}
 <div class="list-item-progress-container" title="$percentage%" style='float:left;width:60px;height:10px;border:1px solid black;margin-top:4px;'>
 <div class="list-item-progress" style='width:$div{$mul{$percentage,6},10}px; height:10px; background-color: red;'>
@@ -114,7 +114,7 @@ $if{$field{size},<br/><span title="$html{$field{size}} bytes">Size: <b>$html{$fi
 </div>
 </div>
 </td>
-<td><header class="list-item-header"><a href="$html{$field{url}}">$html{$or{$field{caption},$field{title},$prettyurl{$field{url}},Untitled}}</a></header>
+<td class="list-item-result"><header class="list-item-header"><a href="$html{$field{url}}">$html{$or{$field{caption},$field{title},$prettyurl{$field{url}},Untitled}}</a></header>
 <span class="list-item-content" style="display: block;">
 $highlight{$snippet{$field{sample}},$terms}$if{$field{sample},...}</span>
 <a href="$html{$field{url}}">$html{$field{url}}</a>
