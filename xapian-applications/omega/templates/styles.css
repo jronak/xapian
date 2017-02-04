@@ -72,3 +72,8 @@ fieldset {
 .list-item-header {
     font-size: 18px;
 }
+
+.list-item-meta {
+    display: block;
+    font-size: 12px;
+}
