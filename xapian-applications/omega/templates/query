@@ -117,7 +117,7 @@ $if{$field{size},<br/><span title="$html{$field{size}} bytes">Size: <b>$html{$fi
 <td class="list-item-result"><header class="list-item-header"><a href="$html{$field{url}}">$html{$or{$field{caption},$field{title},$prettyurl{$field{url}},Untitled}}</a></header>
 <span class="list-item-content" style="display: block;">
 $highlight{$snippet{$field{sample}},$terms}$if{$field{sample},...}</span>
-<a href="$html{$field{url}}">$html{$field{url}}</a>
+<a class="list-item-link" href="$html{$field{url}}">$html{$field{url}}</a>
 <span class="list-item-meta">
 matching:
 <i>$list{$map{$terms,$html{$prettyterm{$_}}},</i>$. <i>,</i> and <i>}</i>${for lynx:}</span></td></tr>}
